@@ -12,6 +12,10 @@ const Cart = (props) => {
         total = total + parseInt(sport.time);
     }
 
+    const handleAddToBreakTime = () => {
+        console.log('click')
+    }
+
     return (
         <div className='position'>
             <div className='cart'>
@@ -39,19 +43,19 @@ const Cart = (props) => {
                 <h5 className='mt-4 ps-3'>Add a Break</h5>
                 <div className='break-time'>
                     <div>
-                        <p className='rounded-circle'>10s</p>
+                        <p onClick={handleAddToBreakTime} className='rounded-circle'>10s</p>
                     </div>
                     <div>
-                        <p className='rounded-circle'>20s</p>
+                        <p onClick={handleAddToBreakTime} className='rounded-circle'>20s</p>
                     </div>
                     <div>
-                        <p className='rounded-circle'>30s</p>
+                        <p onClick={handleAddToBreakTime} className='rounded-circle'>30s</p>
                     </div>
                     <div>
-                        <p className='rounded-circle'>40s</p>
+                        <p onClick={handleAddToBreakTime} className='rounded-circle'>40s</p>
                     </div>
                     <div>
-                        <p className='rounded-circle'>50s</p>
+                        <p onClick={handleAddToBreakTime} className='rounded-circle'>50s</p>
                     </div>
                 </div>
             </div>
