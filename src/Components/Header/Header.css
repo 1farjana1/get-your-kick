@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 70px;
+}
+
+.header h3 {
+    margin-left: 7px;
+    color: orange;
+}
+
+.icon {
+    color: rgb(32, 154, 178);
+}

@@ -1,0 +1,79 @@
+.position {
+    position: sticky;
+    top: 0;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.user-info p {
+    /* margin-bottom: 0; */
+    margin-left: 15px;
+}
+
+.location-icon {
+    color: rgba(65, 64, 64, 0.527);
+}
+
+.user-data {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 35px 10px 10px 15px;
+    background-color: rgba(188, 186, 186, 0.187);
+    border-radius: 10px;
+}
+
+.user-data p {
+    margin-bottom: 0;
+}
+
+.break-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 25px 7px 7px 15px;
+    background-color: rgba(188, 186, 186, 0.187);
+    border-radius: 10px;
+}
+
+.break-time p {
+    background-color: rgba(245, 245, 245, 0.664);
+    padding: 5px;
+    margin: 0;
+}
+
+.exercise-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 25px 7px 7px 15px;
+    background-color: rgba(188, 186, 186, 0.187);
+    border-radius: 10px;
+}
+
+.exercise-details p {
+    margin-bottom: 0;
+}
+
+.activity {
+    padding: 10px;
+    margin: 25px 7px 7px 15px;
+    background-color: rgba(188, 186, 186, 0.187);
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(255, 166, 0, 0.789);
+}
+
+.activity:hover {
+    background-color: rgba(32, 178, 171, 0.668);
+}
+
+.activity p {
+    margin-bottom: 0px;
+}
