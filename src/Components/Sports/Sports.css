@@ -2,13 +2,14 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
     padding-left: 70px;
+    margin-top: -40px;
 }
 
 .exercise-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding-top: 70px;
+    padding-top: 40px;
 
 }
 
@@ -26,14 +27,6 @@
     border-radius: 20px;
     background-color: lightblue;
 
-}
-
-
-.header-part {
-    padding-left: 140px;
-    margin-top: 20px;
-    display: inline-block;
-    border: 1px solid blue;
 }
 
 @media only screen and (max-width:768px) {
