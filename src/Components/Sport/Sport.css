@@ -18,8 +18,9 @@
     width: 100%;
     padding: 10px;
     border-radius: 15px;
-    background-color: rgba(0, 128, 0, 0.587);
+    background-color: rgba(85, 107, 47, 0.839);
     border: none;
+    color: white;
 }
 
 .btn-cart:hover {
