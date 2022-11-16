@@ -1,7 +1,7 @@
 .sport {
     padding: 35px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.494);
+    background-color: lightblue;
 }
 
 .sport-info {
@@ -18,7 +18,7 @@
     width: 100%;
     padding: 10px;
     border-radius: 15px;
-    background-color: rgba(0, 128, 0, 0.537);
+    background-color: rgba(0, 128, 0, 0.587);
     border: none;
 }
 
