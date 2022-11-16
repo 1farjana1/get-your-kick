@@ -51,6 +51,10 @@
     margin: 0;
 }
 
+.break-time p:hover {
+    background-color: lightskyblue;
+}
+
 .exercise-details {
     display: flex;
     justify-content: space-between;

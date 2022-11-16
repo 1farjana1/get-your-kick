@@ -9,12 +9,25 @@ import 'react-toastify/dist/ReactToastify.css';
 const Cart = (props) => {
     const { cart } = props;
 
+    // time calculation
+
     let total = 0;
     for (const sport of cart) {
         total = total + parseInt(sport.time);
     }
 
-    const notify = () => toast.success("Successfully Done")
+    // toastify 
+
+    const notify = () => toast.success("Successfully Done");
+
+    // btn time show
+    const times = (id) => {
+        const btnId = document.getElementById(id);
+        const setTime = btnId.innerText;
+        const secondId = document.getElementById('para');
+        secondId.innerText = setTime;
+        localStorage.setItem('break-time', setTime);
+    }
 
     return (
         <div className='position'>
@@ -43,19 +56,19 @@ const Cart = (props) => {
                 <h5 className='mt-4 ps-3'>Add a Break</h5>
                 <div className='break-time'>
                     <div>
-                        <p className='rounded-circle'>10s</p>
+                        <p onClick={() => times('btn-time1')} id='btn-time1' className='rounded-circle time'>10s</p>
                     </div>
                     <div>
-                        <p className='rounded-circle'>20s</p>
+                        <p onClick={() => times('btn-time2')} id='btn-time2' className='rounded-circle time'>20s</p>
                     </div>
                     <div>
-                        <p className='rounded-circle'>30s</p>
+                        <p onClick={() => times('btn-time3')} id='btn-time3' className='rounded-circle time'>30s</p>
                     </div>
                     <div>
-                        <p className='rounded-circle'>40s</p>
+                        <p onClick={() => times('btn-time4')} id='btn-time4' className='rounded-circle time'>40s</p>
                     </div>
                     <div>
-                        <p className='rounded-circle'>50s</p>
+                        <p onClick={() => times('btn-time5')} id='btn-time5' className='rounded-circle time'>50s</p>
                     </div>
                 </div>
             </div>
@@ -67,7 +80,7 @@ const Cart = (props) => {
                 </div>
                 <div className='exercise-details'>
                     <p>Break time </p>
-                    <p id='second'>{ } seconds</p>
+                    <p id='para'>0 seconds</p>
                 </div>
             </div>
             <div onClick={notify} className='activity'>
