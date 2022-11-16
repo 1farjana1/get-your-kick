@@ -14,9 +14,6 @@ const Header = () => {
                     </a>
                 </div>
             </nav>
-            {/* <div>
-                <h4 className='header-part'>Select Your Activity</h4>
-            </div> */}
         </div>
 
     );
