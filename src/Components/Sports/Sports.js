@@ -21,7 +21,6 @@ const Sports = () => {
     }
     return (
         <div>
-            {/* <h4 className='header-part'>Select Your Activity</h4> */}
             <div className="sports-container">
                 <div className="exercise-container">
                     {
@@ -32,10 +31,12 @@ const Sports = () => {
                         ></Sport>)
                     }
                 </div>
+                {/* cart-part */}
                 <div className="cart-container">
                     <Cart cart={cart}></Cart>
                 </div>
             </div>
+            {/* questions-part */}
             <div className="question-container">
                 <Question1></Question1>
             </div>
