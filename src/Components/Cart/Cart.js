@@ -19,7 +19,7 @@ const Cart = (props) => {
     return (
         <div className='position'>
             <div className='cart'>
-                <FontAwesomeIcon className='fa-light fs-1 icon' icon={faUser}></FontAwesomeIcon>
+                <FontAwesomeIcon className='fa-light fs-1 user' icon={faUser}></FontAwesomeIcon>
                 <div className='user-info'>
                     <p className='fw-semibold'>Farjana Yeasmin</p>
                     <p className='location-icon'><FontAwesomeIcon className='location-icon' icon={faLocationDot}></FontAwesomeIcon> Dhaka,Bangladesh</p>

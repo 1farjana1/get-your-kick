@@ -8,7 +8,7 @@ const Sport = (props) => {
         <div className='sport'>
             <img className='rounded' src={picture} alt="" />
             <div className="sport-info">
-                <p>Name : {name}</p>
+                <p className='fw-bold fs-5'>{name}</p>
                 <p>Age : {age}</p>
                 <p>Time : {time}</p>
                 <p>Description : {description}</p>

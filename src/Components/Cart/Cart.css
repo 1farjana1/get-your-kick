@@ -10,12 +10,16 @@
 }
 
 .user-info p {
-    /* margin-bottom: 0; */
+    margin-bottom: 0;
     margin-left: 15px;
 }
 
 .location-icon {
     color: rgba(65, 64, 64, 0.527);
+}
+
+.user {
+    color: rgba(0, 128, 0, 0.659);
 }
 
 .user-data {
@@ -67,7 +71,7 @@
     background-color: rgba(188, 186, 186, 0.187);
     border-radius: 10px;
     text-align: center;
-    background-color: rgba(255, 166, 0, 0.789);
+    background-color: rgba(0, 128, 0, 0.537);
 }
 
 .activity:hover {
