@@ -2,9 +2,11 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import './Cart.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Cart = (props) => {
-    // console.log(props.cart[0].time)
     const { cart } = props;
 
     let total = 0;
@@ -12,9 +14,7 @@ const Cart = (props) => {
         total = total + parseInt(sport.time);
     }
 
-    const handleAddToBreakTime = () => {
-        console.log('click')
-    }
+    const notify = () => toast.success("Successfully Done")
 
     return (
         <div className='position'>
@@ -43,19 +43,19 @@ const Cart = (props) => {
                 <h5 className='mt-4 ps-3'>Add a Break</h5>
                 <div className='break-time'>
                     <div>
-                        <p onClick={handleAddToBreakTime} className='rounded-circle'>10s</p>
+                        <p className='rounded-circle'>10s</p>
                     </div>
                     <div>
-                        <p onClick={handleAddToBreakTime} className='rounded-circle'>20s</p>
+                        <p className='rounded-circle'>20s</p>
                     </div>
                     <div>
-                        <p onClick={handleAddToBreakTime} className='rounded-circle'>30s</p>
+                        <p className='rounded-circle'>30s</p>
                     </div>
                     <div>
-                        <p onClick={handleAddToBreakTime} className='rounded-circle'>40s</p>
+                        <p className='rounded-circle'>40s</p>
                     </div>
                     <div>
-                        <p onClick={handleAddToBreakTime} className='rounded-circle'>50s</p>
+                        <p className='rounded-circle'>50s</p>
                     </div>
                 </div>
             </div>
@@ -67,12 +67,13 @@ const Cart = (props) => {
                 </div>
                 <div className='exercise-details'>
                     <p>Break time </p>
-                    <p>seconds</p>
+                    <p id='second'>{ } seconds</p>
                 </div>
             </div>
-            <div className='activity'>
+            <div onClick={notify} className='activity'>
                 <p>Activity Completed</p>
             </div>
+            <ToastContainer></ToastContainer>
         </div>
 
     );
