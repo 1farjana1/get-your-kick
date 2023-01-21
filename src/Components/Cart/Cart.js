@@ -35,7 +35,7 @@ const Cart = (props) => {
                 <FontAwesomeIcon className='fa-light fs-1 user' icon={faUser}></FontAwesomeIcon>
                 <div className='user-info'>
                     <p className='fw-semibold'>Farjana Yeasmin</p>
-                    <p className='location-icon'><FontAwesomeIcon className='location-icon' icon={faLocationDot}></FontAwesomeIcon> Dhaka,Bangladesh</p>
+                    <p className='location-icon'><FontAwesomeIcon className='location-icon' icon={faLocationDot}></FontAwesomeIcon>Dhaka,Bangladesh</p>
                 </div>
             </div>
             <div className='user-data'>
